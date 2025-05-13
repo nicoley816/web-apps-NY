@@ -1,14 +1,15 @@
 <h1>tacos</h1>
 <p> These are so many delish tacos!</p>
 
-<% fillings = ["carnitas", "pescado", "al pastor"] %>
 
 
 <ul>
-<%for filling in fillings %>
+<%for filling in @fillings %>
 <li> <%= filling %> </li>
 <%end%>
 </ul>
+
+<p> Currently, there are <%= @fillings.count %> kinds of tacos. </p>
 
 
 
